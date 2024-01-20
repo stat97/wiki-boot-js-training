@@ -8,3 +8,18 @@ const users = [
   { name: "Bruce", years: 32 },
   { name: "Khamala", years: 16 },
 ];
+//*Uso un mapeo para obtener las edades
+yearUsers = users.map((users) => users.years)
+console.log(yearUsers)
+//*Map para los nombres
+nameUsers = users.map((users) => users.name )
+console.log(nameUsers)
+for(let i=0 ;i< yearUsers.length ;i++){
+
+  if(yearUsers >= 18){
+    console.log(`${nameUsers[i]} es mayor de edad`)
+  }
+  else{
+    console.log(`${nameUsers[i]} es menor de edad`)
+  }
+}
